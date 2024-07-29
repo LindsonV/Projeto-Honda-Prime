@@ -158,27 +158,30 @@ section{
     flex-direction: column;
     justify-content: end;
     gap: 15px;
+
+
+    & .number{
+        font-size: 5em;
+        font-family: "League Gothic", sans-serif;
+    
+        & ul{
+            display: flex;
+            gap: 10px;
+    
+            & li{
+                width: 50px;
+                height: 5px;
+                background-color: #CC0000;;
+                border-radius: 5px;
+                transition: 0.5s;
+            }
+            .active{
+                background-color: #fafafa;
+            }
+        }
+        }
+    
 }
-.number{
-    font-size: 5em;
-    font-family: "League Gothic", sans-serif;
-
-    & .ul{
-        display: flex;
-        gap: 10px;
-
-        & li{
-            width: 50px;
-            height: 5px;
-            background-color: #CC0000;;
-            border-radius: 5px;
-            transition: 0.5s;
-        }
-        .active{
-            background-color: #fafafa;
-        }
-    }
-    }
 
 
 
